@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+import numpy as np
 
-def UrlToIngredients(botLim, topLim, URL):
-    listList = []
+
+def Url2Ingredients(botLim, topLim, URL, desiredRecipe):
     for i in range(botLim, topLim):
         url = URL + str(i)
         ingredientList = []
@@ -14,5 +15,8 @@ def UrlToIngredients(botLim, topLim, URL):
             for ingredient in ingredients:
                 if ingredient.text not in ingredientList:
                     ingredientList.append(ingredient.text)
-            listList.append(ingredientList)
-    return listList
+            compareArray = np.array(ingredientList)
+            if np.array_equal(desiredRecipe, compareArray):
+                print('There is a match! The URL to your recipe is: ' + url)
+            print(ingredientList)
+
