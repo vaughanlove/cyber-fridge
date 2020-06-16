@@ -5,8 +5,9 @@ def UrlToIngredients(botLim, topLim, URL):
     listList = []
     for i in range(botLim, topLim):
         ingredientList = []
+        url = URL + str(i)
         try:
-            page = requests.get(URL)
+            page = requests.get(url)
             soup = BeautifulSoup(page.content, 'html.parser')
         except:
             print('recipe doesn\'t exist')
