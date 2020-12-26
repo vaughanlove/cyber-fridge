@@ -1,9 +1,10 @@
 import mysql.connector
+from password import passw
 
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="GlassGlobe101!",
+  password=passw,
   database="mydatabase"
 )
 
