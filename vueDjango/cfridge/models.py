@@ -8,3 +8,7 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.name
+
+class Ingredients(models.Model):
+    ingredients = models.JSONField()
+
