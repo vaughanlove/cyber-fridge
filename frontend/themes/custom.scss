@@ -1,0 +1,28 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+$primary: #4caf50;
+$secondary: #EDE580;
+$accent: #EDE580;
+$error: #f44336;
+$warning: #ff9800;
+$info: #ff5722;
+$success: #2196f3;
+$dark: #EDE580;
+
+$theme-colors: (
+  "primary": #A10702,
+  "danger": #130303,
+  "secondary":#A4AF69,
+  "accent":#96939B,
+  "dark":#96939B
+);
+
+$body-bg: #E8E8E8;
+$body-color: #420217;
+
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
