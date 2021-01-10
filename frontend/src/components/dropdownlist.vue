@@ -1,9 +1,8 @@
 
 
 <template>
-  <div>
-    <b-form-input v-model="text" placeholder="Enter your name"></b-form-input>
-    <div class="mt-2">Value: {{ text }}</div>
+  <div class="dropdownlist">
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -12,7 +11,7 @@ export default {
   name: "dropdownlist",
   data() {
     return {
-      text: ''
+      msg: 'dropdownlist'
     }
   }
 }

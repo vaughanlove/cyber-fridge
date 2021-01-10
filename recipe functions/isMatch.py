@@ -1,5 +1,4 @@
 from URLToIngredients import UrlToIngredients
-import fulljson as JSON
 
 recipes = UrlToIngredients(botLim=53600, topLim=53803, URL='https://www.delish.com/cooking/recipe-ideas/recipes/a')
 
