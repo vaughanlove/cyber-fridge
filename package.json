@@ -1,0 +1,8 @@
+{
+  "name": "cyber-fridge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vaughanlove/cyber-fridge",
+  "author": "vaughanlove <vaughanlove1@gmail.com>",
+  "license": "MIT"
+}
