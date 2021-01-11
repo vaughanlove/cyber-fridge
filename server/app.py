@@ -1,11 +1,10 @@
-import os
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 from flask_cors import CORS
 from neo4j import GraphDatabase
 import json
 
-f=open("../credentials/account.txt","r")
+f=open("credentials.txt","r")
 lines=f.readlines()
 neo4jpass=lines[0]
 f.close()
