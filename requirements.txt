@@ -15,7 +15,7 @@ MarkupSafe==1.1.1
 mysql==0.0.2
 mysql-connector-python==8.0.22
 mysqlclient==2.0.2
-numpy==1.19.4
+numpy==1.22.0
 protobuf==3.14.0
 PyMySQL==0.10.1
 pytz==2020.4
